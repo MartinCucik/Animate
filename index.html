@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Animated Image Pieces | Demo: Entry | Codrops</title>
+    <title>Martin Cucik</title>
     <meta
       name="description"
       content="An animated pieces effect for images with many possibilities"
@@ -127,6 +127,7 @@
             scale: 1.2,
             opacity: 0,
           });
+           menuEl.style.zIndex = "999999";
 
           anime.remove(menuEl);
           anime({
@@ -137,6 +138,7 @@
             scale: [0, 1],
             opacity: 1,
           });
+           menuEl.style.zIndex = "0";
         };
 
         const hideOptions = (ev) => {
